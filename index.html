@@ -3,37 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zoekmachine - Coin Flip</title>
+<title>Coin Search</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <input type="text" value="flip a coin" readonly>
-</header>
+<div class="topbar">
 
-<div class="tabs">
-    <span class="active">Alle</span>
-    <span>Afbeeldingen</span>
-    <span>Video's</span>
-    <span>Nieuws</span>
-    <span>Web</span>
-</div>
+    <div class="searchbox">
 
-<div class="card">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+            <path fill="#9aa0a6" d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 1014 15.5l.27.28v.79L20 21.5 21.5 20zM10 15a5 5 0 110-10 5 5 0 010 10z"/>
+        </svg>
 
-    <h2>Kop of munt</h2>
+        <input value="flip a coin" readonly>
 
-    <div class="coin-container">
-        <div id="coin">🪙</div>
     </div>
 
-    <button id="spin">GOOI DE MUNT OP</button>
+</div>
 
-    <h3 id="result"></h3>
+<div class="tabs">
+    <div class="active">Alle</div>
+    <div>Afbeeldingen</div>
+    <div>Video's</div>
+    <div>Nieuws</div>
+    <div>Web</div>
+    <div>Meer</div>
+</div>
+
+<main>
+
+<div class="result-card">
+
+<h2>Kop of munt</h2>
+
+<div class="coin-area">
+
+<div id="coin">
+🪙
+</div>
 
 </div>
 
+<button id="spin">
+GOOI DE MUNT OP
+</button>
+
+<h1 id="result"></h1>
+
+</div>
+
+</main>
+
 <script src="script.js"></script>
+
 </body>
 </html>
