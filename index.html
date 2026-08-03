@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coin Flip</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoekmachine - Coin Flip</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Flip a Coin</h1>
+<header>
+    <input type="text" value="flip a coin" readonly>
+</header>
 
-    <div id="coin" class="coin">🪙</div>
+<div class="tabs">
+    <span class="active">Alle</span>
+    <span>Afbeeldingen</span>
+    <span>Video's</span>
+    <span>Nieuws</span>
+    <span>Web</span>
+</div>
 
-    <button id="spin">Spin the coin</button>
+<div class="card">
 
-    <h2 id="result">Klik op de munt of de knop</h2>
+    <h2>Kop of munt</h2>
+
+    <div class="coin-container">
+        <div id="coin">🪙</div>
+    </div>
+
+    <button id="spin">GOOI DE MUNT OP</button>
+
+    <h3 id="result"></h3>
+
 </div>
 
 <script src="script.js"></script>
