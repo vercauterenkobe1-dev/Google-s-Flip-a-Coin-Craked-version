@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Flip a Coin</h1>
+
+    <div id="coin" class="coin">🪙</div>
+
+    <button id="spin">Spin the coin</button>
+
+    <h2 id="result">Klik op de munt of de knop</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
