@@ -1,22 +1,25 @@
-const coin = document.getElementById("coin");
-const button = document.getElementById("spin");
-const result = document.getElementById("result");
+const coin=document.getElementById("coin");
+const button=document.getElementById("spin");
+const result=document.getElementById("result");
 
-function animate(text){
+button.addEventListener("click",()=>{
+
     coin.classList.add("spin");
 
     setTimeout(()=>{
         coin.classList.remove("spin");
-        result.textContent = text;
-    },600);
-}
+        result.innerText="Munt";
+    },1000);
 
-// Klik op de munt => altijd Kop
-coin.addEventListener("click", ()=>{
-    animate("Kop");
 });
 
-// Klik op de knop => altijd Munt
-button.addEventListener("click", ()=>{
-    animate("Munt");
+coin.addEventListener("click",()=>{
+
+    coin.classList.add("spin");
+
+    setTimeout(()=>{
+        coin.classList.remove("spin");
+        result.innerText="Kop";
+    },1000);
+
 });
